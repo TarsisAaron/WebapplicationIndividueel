@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../testCSS.css" rel="stylesheet" type="text/css">
+    <title>Expected Movies</title>
+</head>
+
+<body>
+<div id="top-fixed-div">
+    <a href="CurrentMovies.html">Current Movies</a>
+    <a href="ExpectedMovies.html">Expected Movies</a>
+    <a href="BestMovies.html">Best Movies</a>
+    <script src="../Sorting.js"></script>
+    <button onclick="sortMovies('asc')">Rating asc</button>
+    <button onclick="sortMovies('desc')">Rating desc</button>
+</div>
+
+<div id="movie-overview" style="display: none;">
+    <img id="selected-movie-image" alt="Selected Movie">
+    <div id="selected-movie-details">
+        <p id="selected-movie-title">movie title</p>
+        <p id="selected-movie-year">year</p>
+        <p id="selected-movie-genre">genre</p>
+        <p id="selected-movie-rating">rating</p>
+        <p id="selected-movie-summary">summary</p>
+    </div>
+</div>
+
+<div id="bottom-fixed-div">
+    <img class="movie-thumbnail" src="../Images/Inception.jpg" alt="Movie 7" data-movie-title="Inception" data-movie-year="2010" data-movie-genre="Action/Adventure/Sci-Fi" data-movie-rating="8.8" data-movie-summary="">
+    <img class="movie-thumbnail" src="../Images/TheDeparted.jpg" alt="Movie 8" data-movie-title="The Departed" data-movie-year="2014" data-movie-genre="Adventure/Drama/Sci-Fi" data-movie-rating="8.6" data-movie-summary="">
+    <img class="movie-thumbnail" src="../Images/Titanic.jpg" alt="Movie 9" data-movie-title="Titanic" data-movie-year="1997" data-movie-genre="Drama/Romance" data-movie-rating="7.9" data-movie-summary="">
+    <img class="movie-thumbnail" src="../Images/WolfOfWalstreet.jpg" alt="Movie 10" data-movie-title="The Wolf of Walstreet" data-movie-year="2014" data-movie-genre="Adventure/Drama/Sci-Fi" data-movie-rating="8.6" data-movie-summary="">
+
+</div>
+
+<script src="../Thumbnails.js"></script>
+</body>
+</html>

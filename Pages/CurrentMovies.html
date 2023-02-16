@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../testCSS.css" rel="stylesheet" type="text/css">
+    <title>Current Movies</title>
+</head>
+
+<body>
+<div id="top-fixed-div">
+    <a href="CurrentMovies.html">Current Movies</a>
+    <a href="ExpectedMovies.html">Expected Movies</a>
+    <a href="BestMovies.html">Best Movies</a>
+    <script src="../Sorting.js"></script>
+    <button onclick="sortMovies('asc')">Rating asc</button>
+    <button onclick="sortMovies('desc')">Rating desc</button>
+</div>
+
+<div id="movie-overview" style="display: none;">
+    <img id="selected-movie-image" alt="Selected Movie">
+    <div id="selected-movie-details">
+        <p id="selected-movie-title">movie title</p>
+        <p id="selected-movie-year">year</p>
+        <p id="selected-movie-genre">genre</p>
+        <p id="selected-movie-rating">rating</p>
+        <p id="selected-movie-summary">summary</p>
+    </div>
+</div>
+
+<div id="bottom-fixed-div">
+    <img class="movie-thumbnail" src="../Images/Ant-Man.jpg" alt="Movie 6" data-movie-title="Ant-Man And The Wasp: Quantumania" data-movie-year="2023" data-movie-genre="Action" data-movie-rating="6.6" data-movie-summary="In 'Ant-Man and the Wasp: Quantumania' keren superheldenpartners Scott Lang (Paul Rudd) en Hope van Dyne (Evangeline Lilly) terug om hun avonturen als Ant-Man en The Wasp voort te zetten. Samen met Hope's ouders Hank Pym (Michael Douglas) en Janet van Dyne (Michelle Pfeiffer) verkennen ze de Quantum Realm, waarbij er vreemde nieuwe wezens op hun pad komen. Zo beginnen ze aan een avontuur dat ze voorbij de grenzen zal brengen van wat ze voor mogelijk hielden.">
+    <img class="movie-thumbnail" src="../Images/Avatar.jpg" alt="Movie 7" data-movie-title="Avatar: The Way Of Water" data-movie-year="2023" data-movie-genre="Action/Sci-Fi" data-movie-rating="7.8" data-movie-summary="Jake Sully en Ney'tiri hebben een gezin gevormd en doen er alles aan om bij elkaar te blijven. Ze verkennen de mysteries van Pandora nadat ze hun huis moeten verlaten. Wanneer een oude dreiging de kop opsteekt, moet Jake een moeilijke strijd voeren.">
+    <img class="movie-thumbnail" src="../Images/MagicMike.jpg" alt="Movie 8" data-movie-title="Magic Mike's Last Dance" data-movie-year="2023" data-movie-genre="Comedy/Drama" data-movie-rating="5.8" data-movie-summary="Magic Mike Lane (Channing Tatum) gaat na lange tijd het podium weer op nadat hij door een mislukte zakendeal blut is en als barman werkt in Florida. Voor een hopelijk laatste uitspatting gaat Mike naar Londen met een rijke socialite (Hayek Pinault) die hem een aanbod doet dat hij niet kan weigeren… al heeft zij zo haar eigen plannen. Als Mike er uiteindelijk achter komt wat haar bedoeling is, blijkt er veel op het spel te staan. Zal het hem en het groepje sexy nieuwe dansers dat hij moet klaarstomen lukken om een geweldige show neer te zetten?">
+    <img class="movie-thumbnail" src="../Images/Plane.jpg" alt="Movie 9" data-movie-title="Plane" data-movie-year="2023" data-movie-genre="Action/Thriller" data-movie-rating="6.5" data-movie-summary="Piloot Ray Torrance (Gerard Butler) komt in een storm terecht waarbij zijn vliegtuig zwaar beschadigd raakt. Hierdoor is hij genoodzaakt om een spectaculaire noodlanding te maken op een Filipijns eiland. Daar blijken Ray en zijn passagiers terecht te zijn gekomen in een oorlogsgebied dat wordt gedomineerd door meedogenloze militie die het op zijn vliegtuig en de inzittenden gemunt hebben. Terwijl de hele wereld op zoek is naar het verdwenen vliegtuig zet Ray alles op alles om zijn passagiers in leven te houden.">
+    <img class="movie-thumbnail" src="../Images/WolfOfWalstreet.jpg" alt="Movie 10" data-movie-title="The Wolf of Walstreet" data-movie-year="2014" data-movie-genre="Adventure/Drama/Sci-Fi" data-movie-rating="8.6" data-movie-summary="">
+
+</div>
+
+<script src="../Thumbnails.js"></script>
+</body>
+</html>
