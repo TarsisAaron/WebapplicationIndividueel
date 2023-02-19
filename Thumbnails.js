@@ -19,3 +19,6 @@ movieThumbnails.forEach(movieThumbnail => {
         movieOverview.style.display = 'block';
     });
 });
+
+const displayThumbnail = document.querySelector('.movie-thumbnail:first-child');
+displayThumbnail.click();

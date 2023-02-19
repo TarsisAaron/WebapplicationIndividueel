@@ -14,12 +14,18 @@ nav {
     z-index: 1;
 }
 
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
 #top-fixed-div {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: darkorange;
+    border-top: 5px solid black;
+    background-color: white;
+    border-bottom: 5px solid black;
     padding: 10px;
     display: flex;
     justify-content: space-between;

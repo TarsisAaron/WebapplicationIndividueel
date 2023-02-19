@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="../testCSS.css" rel="stylesheet" type="text/css">
+    <link href="../MovieCSS.css" rel="stylesheet" type="text/css">
     <title>Expected Movies</title>
 </head>
 
@@ -12,8 +12,11 @@
     <a href="ExpectedMovies.html">Expected Movies</a>
     <a href="BestMovies.html">Best Movies</a>
     <script src="../Sorting.js"></script>
-    <button onclick="sortMovies('asc')">Rating asc</button>
-    <button onclick="sortMovies('desc')">Rating desc</button>
+    <select id="sort-options" onchange="sortMovies(this.value)">
+        <option value="" selected disabled hidden>Sort By</option>
+        <option value="asc">Rating asc</option>
+        <option value="desc">Rating desc</option>
+    </select>
 </div>
 
 <div id="movie-overview" style="display: none;">
