@@ -8,7 +8,6 @@ function sortMovies(sortOrder) {
 
     const movies = [];
 
-    // Loop door thumbnails en in array zetten
     movieThumbnails.forEach(thumbnail => {
         parent.removeChild(thumbnail);
         movies.push({
@@ -22,14 +21,12 @@ function sortMovies(sortOrder) {
         });
     });
 
-    // Films sorteren
     if (sortOrder === 'asc') {
         movies.sort((a, b) => a.rating - b.rating);
     } else {
         movies.sort((a, b) => b.rating - a.rating);
     }
 
-    // Loop door the gesorteerde films en thumbnail terugplaatsen in div.
     movies.forEach(movie => {
         movie.thumbnail.src = movie.src;
         movie.thumbnail.alt = movie.title;
